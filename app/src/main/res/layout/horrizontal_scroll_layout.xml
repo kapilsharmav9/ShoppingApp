@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:elevation="3dp"
+    android:background="@android:color/black">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btn_layout">
+    <TextView
+        android:id="@+id/dealoftheday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deal Of The Day"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:text="View All"
+        android:layout_alignParentRight="true"
+        android:id="@+id/view_All"/>
+</RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycle_viewmore"
+        android:background="@android:color/black"
+        android:layout_below="@id/btn_layout"/>
+</RelativeLayout>
